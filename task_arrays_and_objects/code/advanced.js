@@ -90,3 +90,6 @@ scotlandIsMiddle = false;
  } else {
      console.log("Scotland is neither biggest or smallest, it is somewhere in-between");
  }
+
+
+ // this exercise has been finished and answers checked 

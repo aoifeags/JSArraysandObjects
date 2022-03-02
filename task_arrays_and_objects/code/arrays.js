@@ -29,7 +29,7 @@ stations.shift()
  */
 
 stationCount = stations.length;
-// note there is no () at the end of lenght. 
+// note there is no () at the end of length. 
 //console.log("There are " + stationCount + " stations.");
 
 
@@ -50,8 +50,11 @@ thirdStation = stations[2];
  * Someone put the wrong Berwick on the timetable! Update "North Berwick" to "Berwick-upon-Tweed".
  */
 stations.splice(1, 1, "Berwick-Upon-Tweed")
+
 //console.log(stations);
 // this worked, but is there a way to do it without having to know the element index was 1?
+// SUGGESTION stations[stations.indexOf("Berwick-Upon-Tweed")]   
+
 
 /**
  * Q6.
@@ -66,13 +69,13 @@ stations.splice(4, 1)
 /**
  * Q7.
  * We forgot about Darlington! Add it to the route between Newcastle and York.
- * 
+ * QUESTION
  * NB - SPLICE If greater than the length of the array, start will be set to the length of the array. 
  * If toDelete is 0, in this case, no element will be deleted but the method will behave as an adding function, 
  * adding as many elements as items provided, from the index start.
  */
 len = stations.length
-stations.splice(3, 0, "Darlington")
+stations.splice(len, 0, "Darlington")
 //console.log(stations);
 
 
